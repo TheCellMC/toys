@@ -45,7 +45,7 @@ func main() {
 
 func run(ctx context.Context) error {
 	var (
-		cbAddr     = flag.String("cb", "http://localhost:8080", "Classificationbox address")
+		cbAddr     = flag.String("cb", "http://localhost:8090", "Classificationbox address")
 		src        = flag.String("src", ".", "source of dataset")
 		teachratio = flag.Float64("teachratio", 0.8, "ratio of images to teach vs use for validation")
 		passes     = flag.Int("passes", 1, "number of times to teach the examples")
